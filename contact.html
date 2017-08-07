@@ -5,83 +5,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mary Katherine Outland Professional Resume</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Mary Katherine Outland Professional Resume</title>
+    <link rel="stylesheet" href="lib/css/reset.css">
+    <link rel="stylesheet" href="lib/css/main.css">
+    <link rel="stylesheet" href="lib/css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<header>
-    <div class="top-header">
-        <h1>Mary Katherine Outland</h1>
+    <header>
+        <div class="top-header">
+            <h1>Mary Katherine Outland</h1>
+        </div>
+
+        <div>
+            <nav id="top-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="resume.zip">Resume</a></li>
+                    <li><a href="codepen.html">CodePen</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="contact">
+        <div class="contact-container">
+            <i class="fa fa-envelope"></i><h2>Email Me!</h2>
+            <form id="contactform"> 
+                <div>
+                    <label for="name">Name <i>(Required)</i></label><input id="name" type="text" name="name" placeholder=" Jane Doe"/>
+                </div>
+                <div> 
+                    <label for="email">Email <i>(Required)</i></label><input id="email" type="text" name="email" placeholder=" hello@gmail.com"/>
+                </div>
+                <div>
+                    <label for="phone">Phone <i>(Required)</i></label><input id="phone" type="text" name="phone" placeholder=" (111) 222-3333"/>
+                </div>
+                <div>
+                    <label for="company">Company</label><input id="company" type="text" name="company" placeholder=" ABC Company"/>
+                </div>
+                <div>
+                    <label for="comment">Comments/Questions</label><textarea id="comment" name="comment" placeholder=" ..." ></textarea>
+                </div>
+                <div>   
+                    <input id="submit" type="submit" name="submit" value="Send Message"/>
+                </div>
+
+            </form>
+        </div>
     </div>
 
-    <div>
-        <nav id="top-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biography.html">Biography</a></li>
-                <li><a href="resume.zip">Resume</a></li>
-                <li><a href="codepen.html">CodePen</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-<section id="contact">
-    <div class="contact-container">
-    <i class="fa fa-envelope"></i><h1>Email Me!</h1>
-                <form id="contactform"> 
-                    <div id="requiredtext">
-                        <p>*Indicates required field</p>
-                    </div>
-        <div>
-            <label for="name">Name*</label><input id="name" type="text" name="name" placeholder=" Name"/>
-        </div>
-        <div> 
-            <label for="email">Email*</label><input id="email" type="text" name="email" placeholder=" Email"/>
-        </div>
-        <div>
-            <label for="phone">Phone*</label><input id="phone" type="text" name="phone" placeholder=" Phone"/>
-        </div>
-     <div>
-            <label for="company">Company</label><input id="company" type="text" name="company" placeholder=" Company"/>
-        </div>
-        <div>
-            <label for="comment">Comments/Questions</label><textarea id="comment" name="comment" placeholder=" Comments/Questions" ></textarea>
-        </div>
-        <div>   
-            <input id="submit" type="submit" name="submit" value="Send Message"/>
-        </div>
-
-
-    </form>
-</div>
-
-</section>
-    </div>
-   
-
-
-
-
-
-    <footer>
+<footer>
     <div id="footer-wrapper">
-        <nav id="foot-nav" role="navigation">
+        <nav id="foot-nav">
             <ul id="foot-social">
                 <li><a href="https://www.linkedin.com/in/maryoutland/"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://twitter.com/mkoutland"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="http://road2hire.org/"></i>Road2Hire</a></li>
+                <li><a href="http://road2hire.org/">Road2Hire</a></li>
             </ul>
         </nav>
-        </div>
-    </footer>
- <script src="contact.js"></script>
+    </div>
+</footer>
+
+<script src="lib/contact.js"></script>
+
 </body>
 </html>
